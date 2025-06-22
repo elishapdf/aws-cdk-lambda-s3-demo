@@ -2,7 +2,11 @@ from aws_cdk import (
     # Duration,
     Stack,
     # aws_sqs as sqs,
+    aws_s3 as s3, 
+    aws_lambda as _lambda,
+    BundlingOptions
 )
+import os
 from constructs import Construct
 
 class CdkSreDemoStack(Stack):
@@ -11,6 +15,14 @@ class CdkSreDemoStack(Stack):
         super().__init__(scope, construct_id, **kwargs)
 
         # The code that defines your stack goes here
+        s3.Bucket(self, "SreDemoBucket", versioned=True)
+
+        _lambda.Function(
+            self, "HelloLambda",
+            runtime=_lambda.Runtime.PYTHON_3_12,
+            handler="hello_lambda.handler",
+            code=_lambda.Code.from_asset("hello_lambda.zip")
+        )
 
         # example resource
         # queue = sqs.Queue(
