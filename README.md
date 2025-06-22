@@ -6,9 +6,7 @@ This beginner-friendly project shows how to use **AWS CDK (Python)** to deploy:
 
 It’s designed for those new to cloud development, DevOps, or Infrastructure as Code (IaC). The full tutorial covers secure IAM setup, CDK bootstrapping, and troubleshooting a real Lambda deployment issue.
 This project is designed for beginners and covers secure AWS setup, Infrastructure as Code (IaC), and troubleshooting a common Lambda packaging issue.
-**[Read the full project write-up on my portfolio](https://your-portfolio-url.com/aws-cdk-lambda-s3)**
-
---
+**[Read the full project write-up on my portfolio](https://portfolio-4wj.pages.dev/)**
 
 ## What I Learned
 This project builds introductory level hands-on skills that are essential for Cloud, DevOps, and SRE roles:
@@ -18,12 +16,8 @@ This project builds introductory level hands-on skills that are essential for Cl
 - CloudFormation synthesis and asset management
 - Troubleshooting CDK deployments and file staging
 
---
-
 ## Why This Project
 I created this project to strengthen my portfolio for SRE, DevOps, and cloud engineering roles. With a strong background in Azure, I wanted to see how quickly I could transfer my skills to AWS — completing this in under 6 hours. This project demonstrates my ability to work with AWS CDK, implement security best practices, and troubleshoot infrastructure-as-code challenges—key skills for modern DevOps and SRE roles.
-
---
 
 ## Skills Demonstrated
 - AWS CDK (Python)
@@ -31,16 +25,12 @@ I created this project to strengthen my portfolio for SRE, DevOps, and cloud eng
 - Infrastructure automation
 - CloudFormation synthesis & deployment logic
 
---
-
 ## Prerequisites:
 - AWS account
 - AWS CLI v2
 - Python 3.8+ (tested with 3.12)
 - Node.js v14+ (tested with v22.16.0 and npm v10.9.2)
 - AWS CDK v2 installed: `npm install -g aws-cdk`
-
---
 
 ## Deployment Steps
 ```bash
@@ -67,7 +57,7 @@ cdk deploy --profile your-profile
 
 ## Confirm Deployment
 You can verify the S3 bucket and Lambda function through the AWS Console or CLI. 
-Instructions for both are included in the [complete tutorial.]()
+Instructions for both are included in the [complete tutorial.](https://portfolio-4wj.pages.dev/)
 
 ### S3 Bucket:
 - Go to [S3 Console](https://s3.console.aws.amazon.com/s3/)
@@ -83,7 +73,6 @@ Instructions for both are included in the [complete tutorial.]()
   aws lambda invoke --function-name <your-function-name> response.json
   cat response.json
 ```
--- 
 
 ## Clean Up
 ```bash
